@@ -1,0 +1,18 @@
+<div>
+  <button (click)="connect()">Connect</button>
+  <button (click)="toggleL1()">Toggle L1</button>
+  <button (click)="toggleL2()">Toggle L2</button>
+  <button (click)="close()">Close</button>
+</div>
+
+<div>
+  <div *ngIf="this.port">
+    <span style="height: 25px;width: 25px;background-color: rgb(0, 182, 9);border-radius: 50%;display: inline-block;"></span>
+    <span>Connected</span>
+  </div>
+  <div *ngIf="!this.port">
+    <span style="height: 25px;width: 25px;background-color: rgb(158, 0, 0);border-radius: 50%;display: inline-block;"></span>
+    <span>Disconnected</span>
+  </div>
+</div>
+
